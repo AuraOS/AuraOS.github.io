@@ -1,0 +1,38 @@
+/*
+ *  style.css - Style for AuraOS Internet Site.
+ *  Copyright (C) 2018 Atnode and Ercan Ersoy
+ *  This stylesheet licensed under CC-BY-NC-ND 4.0.
+ */
+
+.pure-menu { background-color: black; font-size: 16pt; }
+
+.title { text-align: center; }
+
+@media screen and (min-width: 768px)
+{
+   .pure-menu { position: fixed; text-align: center; }
+   .pure-menu-horizontal { display: inline-block; }
+   .pure-menu-heading { float: left; }
+   .pure-menu-list { float: right; }
+
+   .title { padding: 10%; }
+   #title-header { font-size: 36pt; }
+   #title-description { font-size: 18pt; }
+}
+
+@media screen and (max-width: 768px)
+{
+   .pure-menu { position: static; text-align: center; }
+   .pure-menu-horizontal .pure-menu-link { display: block; }
+   .pure-menu-horizontal .pure-menu-item { display: block; }
+
+   .title { padding: 5%; }
+   #title-header { font-size: 18pt; }
+   #title-description { font-size: 18pt; }
+}
+
+.features { text-align: center; background-color: #eee; color: black; letter-spacing: normal;}
+#features-header { font-size: 18pt; }
+#features-description { font-size: 12pt; }
+
+.footer { background-color: black; color: white; font-size: 100%; padding: 1%;}
